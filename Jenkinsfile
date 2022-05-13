@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+                sh '''
                 python3 name.py
+                '''
             }
         }
     }
